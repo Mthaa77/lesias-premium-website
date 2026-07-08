@@ -1,6 +1,7 @@
 import AdmissionsFlow from "@/components/AdmissionsFlow";
 import EliteHero from "@/components/EliteHero";
 import EliteNavbar from "@/components/EliteNavbar";
+import LiveTicker from "@/components/LiveTicker";
 import MediaShowcase from "@/components/MediaShowcase";
 import PathwayQuiz from "@/components/PathwayQuiz";
 import ProgrammeExplorer from "@/components/ProgrammeExplorer";
@@ -54,6 +55,7 @@ export default function Home() {
     <main>
       <EliteNavbar />
       <EliteHero />
+      <LiveTicker />
 
       <section className="trust-strip container" aria-label="Trust badges">
         {trustBadges.map(([title, label, detail]) => (
