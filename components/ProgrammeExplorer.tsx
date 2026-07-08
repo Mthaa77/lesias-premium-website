@@ -11,14 +11,14 @@ const programmes = [
     saqa: "SAQA ID 58761",
     credits: "140 Credits",
     duration: "12 Months",
-    audience: "New entrants, aspiring assistants, daycare staff",
-    promise: "Build a recognised foundation and enter the ECD sector with confidence.",
-    outcomes: ["Grade R Assistant", "Childcare Worker", "Daycare Practitioner", "ECD Administrator"],
+    audience: "First-time ECD students, aspiring assistants, daycare staff, and childcare workers",
+    promise: "Start with a recognised foundation that helps you enter the ECD sector with confidence and direction.",
+    outcomes: ["Assistant Teacher", "Childcare Worker", "Daycare Practitioner", "ECD Administrator"],
     benefits: [
-      "Child development milestones and early learning foundations.",
-      "Age-appropriate teaching methods and classroom confidence.",
-      "Classroom management and early learning environment basics.",
-      "A clear stepping stone toward advanced ECD leadership.",
+      "Understand how young children grow, learn, communicate, and develop.",
+      "Build practical confidence for supporting children in a classroom or daycare setting.",
+      "Learn the basics of planning, managing, and supporting early learning activities.",
+      "Create a strong stepping stone toward Level 5 and future ECD leadership.",
     ],
   },
   {
@@ -29,14 +29,14 @@ const programmes = [
     saqa: "SAQA ID 23118",
     credits: "240 Credits",
     duration: "18–24 Months",
-    audience: "Aspiring Grade R teachers, daycare owners, ECD managers",
-    promise: "Advance into teaching, management, curriculum leadership, and daycare ownership.",
+    audience: "Aspiring Grade R teachers, daycare owners, supervisors, and ECD centre managers",
+    promise: "Move beyond the basics into teaching confidence, centre leadership, curriculum planning, and daycare business readiness.",
     outcomes: ["Grade R Teacher", "Daycare Owner", "ECD Manager", "Curriculum Developer"],
     benefits: [
-      "Advanced pedagogy, curriculum design, and assessment methods.",
-      "Business management, financial planning, marketing, and compliance.",
-      "Staff supervision, centre operations, and leadership readiness.",
-      "Preparation for independent teaching, management, and ownership.",
+      "Strengthen your teaching, assessment, curriculum, and classroom leadership ability.",
+      "Develop business confidence for managing, formalising, or growing an ECD centre.",
+      "Learn staff supervision, centre operations, compliance, and parent communication skills.",
+      "Prepare for a bigger role as a teacher, manager, owner, or community ECD leader.",
     ],
   },
 ];
@@ -47,10 +47,10 @@ export default function ProgrammeExplorer() {
   return (
     <section className="section programme-command" id="programmes">
       <div className="container section-heading centered-heading">
-        <p className="eyebrow">Programme command centre</p>
-        <h2>Two offerings. One clear professional journey.</h2>
+        <p className="eyebrow">Programme guide</p>
+        <h2>Choose the qualification that fits your next step.</h2>
         <p>
-          A high-converting programme selector helps students compare the two qualifications by level, duration, career outcome, and personal ambition.
+          Lesia's offers a clear ECD growth path: begin with a strong foundation, then progress into deeper teaching, leadership, and daycare ownership readiness.
         </p>
       </div>
 
@@ -72,16 +72,16 @@ export default function ProgrammeExplorer() {
         </div>
 
         <div className="programme-display">
-          <div className="programme-visual">
-            <div className="certificate-card">
+          <div className="programme-visual soft-programme-visual">
+            <div className="certificate-card clean-certificate-card">
               <span>{active.saqa}</span>
               <h3>{active.level}</h3>
               <p>{active.title}</p>
-              <div className="seal">✦</div>
+              <div className="seal">✓</div>
             </div>
             <div className="programme-meter">
-              <span>Career readiness</span>
-              <i style={{ width: active.id === "level4" ? "74%" : "94%" }} />
+              <span>{active.id === "level4" ? "Foundation confidence" : "Leadership readiness"}</span>
+              <i style={{ width: active.id === "level4" ? "76%" : "94%" }} />
             </div>
           </div>
 
