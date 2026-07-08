@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Cormorant_Garamond, Manrope, Playfair_Display, Sora } from "next/font/google";
 import "./globals.css";
 import "./premium-typography.css";
+import "./media-upgrades.css";
 
 const body = Manrope({ subsets: ["latin"], variable: "--font-body" });
 const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
