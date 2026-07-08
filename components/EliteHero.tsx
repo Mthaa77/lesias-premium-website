@@ -1,27 +1,15 @@
-"use client";
-
 import Image from "next/image";
-import { MouseEvent, useState } from "react";
 
 const heroStats = [
-  ["Level 4", "FET Certificate", "Start your ECD career"],
-  ["Level 5", "National Diploma", "Advance into leadership"],
-  ["2", "Campuses", "Soshanguve + Hammanskraal"],
-  ["Sat", "Classes only", "Built for working adults"],
+  ["Level 4", "Start strong", "A recognised foundation for your ECD career"],
+  ["Level 5", "Lead with confidence", "Advanced training for teachers and centre owners"],
+  ["2", "Local campuses", "Soshanguve Block K and Hammanskraal"],
+  ["Sat", "Flexible classes", "Designed for parents and working adults"],
 ];
 
 export default function EliteHero() {
-  const [tilt, setTilt] = useState({ x: 0, y: 0 });
-
-  const handleMove = (event: MouseEvent<HTMLDivElement>) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 12;
-    const y = ((event.clientY - rect.top) / rect.height - 0.5) * -12;
-    setTilt({ x, y });
-  };
-
   return (
-    <section className="elite-hero" id="top">
+    <section className="elite-hero clean-hero" id="top">
       <video className="hero-background-video" autoPlay muted loop playsInline preload="metadata">
         <source src="/images/Animate_the_logo._Cinematic_202607080543.mp4" type="video/mp4" />
       </video>
@@ -29,21 +17,19 @@ export default function EliteHero() {
       <div className="premium-noise" />
       <div className="hero-glow hero-glow-one" />
       <div className="hero-glow hero-glow-two" />
-      <div className="hero-orb hero-orb-one" />
-      <div className="hero-orb hero-orb-two" />
 
-      <div className="container elite-hero-grid">
+      <div className="container elite-hero-grid clean-hero-grid">
         <div className="hero-copy">
-          <div className="hero-kicker"><span /> Real Lesia's media · ETDP-SETA Accredited · SAQA Aligned</div>
+          <div className="hero-kicker"><span /> Accredited ECD training · Saturday classes · Local campuses</div>
           <h1>
-            The premium gateway into <span>Early Childhood Development.</span>
+            Become the educator young children <span>never forget.</span>
           </h1>
           <p className="hero-lead">
-            Lesia's Educational Services helps aspiring educators, daycare practitioners, Grade R teachers, and ECD centre owners move from passion to recognised professional progress — now powered by authentic school visuals and cinematic brand motion.
+            Lesia's Educational Services helps passionate people turn care, patience, and love for children into a recognised Early Childhood Development career — with practical support from application to graduation.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-primary magnetic-btn" href="#admissions">Apply for 2025/2026 Intake</a>
-            <a className="btn btn-secondary" href="#media">View school media</a>
+            <a className="btn btn-primary magnetic-btn" href="#admissions">Start your application</a>
+            <a className="btn btn-secondary" href="#pathway">Choose my programme</a>
           </div>
           <div className="hero-metrics" aria-label="Programme highlights">
             {heroStats.map(([value, title, label]) => (
@@ -56,55 +42,36 @@ export default function EliteHero() {
           </div>
         </div>
 
-        <div
-          className="hero-stage media-stage"
-          onMouseMove={handleMove}
-          onMouseLeave={() => setTilt({ x: 0, y: 0 })}
-          style={{ transform: `perspective(1200px) rotateX(${tilt.y}deg) rotateY(${tilt.x}deg)` }}
-        >
-          <video className="stage-brand-video" autoPlay muted loop playsInline preload="metadata" poster="/images/Enhance_logo_ultra_premium_2K_202607080538.jpeg">
-            <source src="/images/Animate_the_logo._Cinematic_202607080543.mp4" type="video/mp4" />
-          </video>
-          <div className="cinema-card main-crest">
-            <div className="crest-rings">
-              <span className="ring ring-one" />
-              <span className="ring ring-two" />
-              <span className="ring ring-three" />
-            </div>
-            <div className="academy-badge ultra-badge logo-badge">
-              <Image
-                src="/images/Enhance_logo_ultra_premium_2K_202607080538.jpeg"
-                alt="Lesia's Educational Services premium logo"
-                fill
-                priority
-                sizes="(max-width: 720px) 280px, 410px"
-              />
+        <div className="hero-media-composition" aria-label="Lesia's Educational Services media collage">
+          <div className="hero-video-card">
+            <video autoPlay muted loop playsInline preload="metadata" poster="/images/Enhance_logo_ultra_premium_2K_202607080538.jpeg">
+              <source src="/images/Animate_the_logo._Cinematic_202607080543.mp4" type="video/mp4" />
+            </video>
+            <div className="hero-video-label">
+              <span>Lesia's identity</span>
+              <strong>Cinematic school brand motion</strong>
             </div>
           </div>
 
-          <div className="floating-proof proof-top">
-            <span>Provider No. 1283</span>
-            <strong>Accredited Training</strong>
+          <div className="hero-photo-card hero-photo-main">
+            <Image src="/images/IMG-20260113-WA0008.jpg" alt="Lesia's Educational Services learning moment" fill priority sizes="(max-width: 720px) 100vw, 520px" />
           </div>
-          <div className="floating-proof proof-right media-proof">
-            <span>Brand Motion</span>
-            <strong>Video Hero Active</strong>
-          </div>
-          <div className="floating-proof proof-bottom">
-            <span>Learning model</span>
-            <strong>Saturdays Only</strong>
+          <div className="hero-photo-card hero-photo-small">
+            <Image src="/images/FB_IMG_1767876345564.jpg" alt="Lesia's Educational Services student milestone" fill sizes="(max-width: 720px) 45vw, 220px" />
           </div>
 
-          <div className="mini-dashboard">
-            <div className="dash-head">
-              <span /> Student Pathway Console
+          <div className="hero-logo-plate">
+            <Image src="/images/Enhance_logo_ultra_premium_2K_202607080538.jpeg" alt="Lesia's Educational Services logo" width={92} height={92} priority />
+            <div>
+              <span>Admissions open</span>
+              <strong>2025/2026 intake</strong>
             </div>
-            <div className="dash-bars">
-              <i style={{ width: "92%" }} />
-              <i style={{ width: "78%" }} />
-              <i style={{ width: "86%" }} />
-            </div>
-            <p>Qualification fit · career goal · campus choice</p>
+          </div>
+
+          <div className="hero-trust-row">
+            <span>ETDP-SETA</span>
+            <span>SAQA aligned</span>
+            <span>SACE endorsed</span>
           </div>
         </div>
       </div>
