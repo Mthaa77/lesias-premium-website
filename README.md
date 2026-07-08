@@ -1,22 +1,24 @@
-# Lesia's Educational Services — Premium Next.js Website
+# Lesia's Educational Services — Ultra Premium Next.js Website
 
-A premium Next.js admissions website for Lesia's Educational Services, designed to feel cinematic, trustworthy, modern, and high-converting.
+An ultra-premium Next.js admissions website for Lesia's Educational Services, designed to feel cinematic, trustworthy, modern, interactive, and high-converting.
 
-## What changed
+## Latest premium upgrades
 
-The original static `index.html` landing page has been revamped into a Next.js app with:
+The site has been upgraded from a clean premium landing page into an elite admissions experience with:
 
-- Premium App Router structure
-- TypeScript support
-- Responsive cinematic hero section
-- Interactive programme pathway quiz
-- Level 4 and Level 5 ECD programme showcases
-- Programme comparison section
-- Student support and career outcome sections
-- Admissions flow
-- FAQ section
+- Ultra-premium interactive navbar with scroll progress, active-section states, and mobile menu
+- Elite cinematic hero section with animated light fields, 3D tilt, floating proof cards, premium badge system, and student pathway console
+- Premium typography upgrade using Playfair Display, Manrope, and Sora through Next font optimisation
+- Multi-step interactive ECD pathway quiz
+- Interactive Level 4 vs Level 5 programme command centre
+- Premium admissions flow component with selectable enrolment steps
+- Editorial brand repositioning section
+- Trust badge architecture
+- Programme intelligence, conversion psychology, and student-success messaging
+- Career outcomes section for employment and entrepreneurship pathways
+- Campus cards for Soshanguve and Hammanskraal
 - WhatsApp, call, and email conversion CTAs
-- Premium typography using Next font optimisation
+- Fully responsive mobile-first styling
 - Vercel-ready project setup
 
 ## Tech stack
@@ -24,7 +26,8 @@ The original static `index.html` landing page has been revamped into a Next.js a
 - Next.js
 - React
 - TypeScript
-- CSS Modules-style global styling through `app/globals.css`
+- App Router
+- Global CSS through `app/globals.css`
 - No external UI library required
 
 ## Run locally
@@ -61,6 +64,10 @@ Recommended deployment: Vercel.
 app/layout.tsx
 app/page.tsx
 app/globals.css
+components/EliteNavbar.tsx
+components/EliteHero.tsx
 components/PathwayQuiz.tsx
+components/ProgrammeExplorer.tsx
+components/AdmissionsFlow.tsx
 package.json
 ```
