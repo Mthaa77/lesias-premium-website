@@ -5,33 +5,33 @@ import { useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Get in touch",
-    text: "Call, WhatsApp, or email admissions and receive simple programme guidance.",
-    detail: "The first conversion goal is to move visitors into a warm WhatsApp conversation where the school can answer fees, requirements, campus, and intake questions.",
+    title: "Speak to admissions",
+    text: "Send a WhatsApp, call, or email and ask about the programme that fits your goals.",
+    detail: "You do not need to know everything before reaching out. Admissions can explain the difference between Level 4 and Level 5 in simple terms.",
   },
   {
     number: "02",
-    title: "Choose programme",
-    text: "Select Level 4 or Level 5 based on your background and career goal.",
-    detail: "The website guides the student toward a pathway: beginner, Grade R teaching, daycare ownership, or personalised admissions support.",
+    title: "Choose your route",
+    text: "Pick the foundation route, the advanced route, or ask for guidance if you are unsure.",
+    detail: "The right programme depends on your background, experience, career goal, and whether you want employment, teaching confidence, or daycare ownership.",
   },
   {
     number: "03",
-    title: "Submit application",
-    text: "Complete your registration form and provide the required documents.",
-    detail: "This step can later become a full online application portal with document upload, proof of payment, and admin tracking.",
+    title: "Prepare your documents",
+    text: "Complete your application and gather the required registration information.",
+    detail: "This step keeps the enrolment process organised so students feel clear, prepared, and supported before classes begin.",
   },
   {
     number: "04",
-    title: "Secure your seat",
-    text: "Pay your registration fee to confirm enrolment before spaces fill.",
-    detail: "The limited-seat message should create urgency while keeping the tone trustworthy and student-friendly.",
+    title: "Secure your place",
+    text: "Confirm your registration and reserve your seat for the intake.",
+    detail: "Early confirmation helps the school plan class groups, campus space, and student support properly.",
   },
   {
     number: "05",
-    title: "Start Saturday",
-    text: "Report to campus and begin your ECD journey with mentor support.",
-    detail: "The final step reinforces the school’s promise: students are supported from first class to graduation and beyond.",
+    title: "Start your Saturdays",
+    text: "Attend classes, build your confidence, and move step by step toward graduation.",
+    detail: "The journey is practical and supportive: learn, prepare, complete your portfolio, and grow into your ECD future.",
   },
 ];
 
@@ -43,10 +43,10 @@ export default function AdmissionsFlow() {
     <section className="section admissions-section" id="admissions">
       <div className="container admissions-grid">
         <div className="section-copy">
-          <p className="eyebrow">Admissions experience</p>
-          <h2>Join Lesia's through a guided premium enrolment flow.</h2>
+          <p className="eyebrow">Admissions</p>
+          <h2>Apply with clarity, support, and confidence.</h2>
           <p>
-            The admissions section now feels like an interactive onboarding desk — clear, reassuring, and built to convert visitors into WhatsApp leads.
+            The enrolment journey is simple: speak to admissions, choose the right route, prepare your documents, secure your place, and begin your Saturday classes.
           </p>
           <a className="btn btn-primary" href="https://wa.me/27605506641?text=Hi%20Lesia%27s%20Educational%20Services%2C%20please%20send%20me%20programme%20and%20registration%20details." target="_blank" rel="noreferrer">
             Apply via WhatsApp
@@ -75,7 +75,7 @@ export default function AdmissionsFlow() {
             <h3>{selected.title}</h3>
             <p>{selected.text}</p>
             <div className="admission-insight">
-              <strong>Premium conversion insight</strong>
+              <strong>What this means</strong>
               <p>{selected.detail}</p>
             </div>
           </div>
