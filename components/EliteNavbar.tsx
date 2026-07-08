@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 const navItems = [
+  { label: "Media", href: "#media" },
   { label: "Pathway", href: "#pathway" },
   { label: "Programmes", href: "#programmes" },
   { label: "Experience", href: "#experience" },
