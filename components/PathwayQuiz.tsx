@@ -6,33 +6,33 @@ type AnswerKey = "starter" | "teacher" | "owner" | "unsure";
 
 const questions = [
   {
-    title: "What future are you building toward?",
-    caption: "Choose the answer that feels closest to your goal.",
+    title: "What do you want your ECD qualification to help you become?",
+    caption: "Choose the answer that feels closest to the future you are working toward.",
     answers: [
-      { key: "starter" as AnswerKey, label: "Start my ECD career", note: "Beginner / first qualification" },
-      { key: "teacher" as AnswerKey, label: "Become a Grade R teacher", note: "Teaching confidence" },
-      { key: "owner" as AnswerKey, label: "Open or formalise a daycare", note: "Business + compliance" },
-      { key: "unsure" as AnswerKey, label: "I need guidance", note: "Admissions support" },
+      { key: "starter" as AnswerKey, label: "I want to start professionally", note: "First qualification" },
+      { key: "teacher" as AnswerKey, label: "I want to teach with confidence", note: "Teaching pathway" },
+      { key: "owner" as AnswerKey, label: "I want to run a daycare", note: "Business pathway" },
+      { key: "unsure" as AnswerKey, label: "I need help choosing", note: "Admissions guidance" },
     ],
   },
   {
-    title: "Which support matters most to you?",
-    caption: "This helps position the right benefit in the final recommendation.",
+    title: "What support would make the biggest difference for you?",
+    caption: "Your answer helps match you with the programme promise that fits your situation.",
     answers: [
-      { key: "starter" as AnswerKey, label: "A clear starting point", note: "Foundation skills" },
-      { key: "teacher" as AnswerKey, label: "Classroom leadership", note: "Advanced teaching" },
-      { key: "owner" as AnswerKey, label: "Business management", note: "Daycare ownership" },
-      { key: "unsure" as AnswerKey, label: "Someone to explain everything", note: "Personal guidance" },
+      { key: "starter" as AnswerKey, label: "A simple place to begin", note: "Foundation support" },
+      { key: "teacher" as AnswerKey, label: "Stronger classroom confidence", note: "Teacher growth" },
+      { key: "owner" as AnswerKey, label: "Business and compliance guidance", note: "Centre ownership" },
+      { key: "unsure" as AnswerKey, label: "Someone to explain the options", note: "Personal support" },
     ],
   },
   {
-    title: "How do you want to study?",
-    caption: "Lesia's Saturday-only learning model is built for real life.",
+    title: "What kind of learning schedule fits your life?",
+    caption: "Lesia's Saturday classes are designed for students with real responsibilities.",
     answers: [
-      { key: "starter" as AnswerKey, label: "Saturdays while I build confidence", note: "Flexible foundation" },
-      { key: "teacher" as AnswerKey, label: "Saturdays while preparing to teach", note: "Career progression" },
-      { key: "owner" as AnswerKey, label: "Saturdays while running responsibilities", note: "Business-friendly" },
-      { key: "unsure" as AnswerKey, label: "I want admissions to advise me", note: "Human support" },
+      { key: "starter" as AnswerKey, label: "Saturdays while I build my foundation", note: "Flexible start" },
+      { key: "teacher" as AnswerKey, label: "Saturdays while I prepare to teach", note: "Career progress" },
+      { key: "owner" as AnswerKey, label: "Saturdays while I manage other duties", note: "Business-friendly" },
+      { key: "unsure" as AnswerKey, label: "I want admissions to guide me", note: "Human help" },
     ],
   },
 ];
@@ -40,26 +40,26 @@ const questions = [
 const results = {
   starter: {
     result: "Level 4 FET Certificate",
-    match: "94% pathway match",
+    match: "Strong starting point",
     tone: "Foundation route",
     description:
-      "Best for beginners, aspiring daycare assistants, childcare workers, and students who want a strong recognised foundation before progressing into advanced ECD roles.",
+      "A practical starting route for new students, aspiring daycare assistants, childcare workers, and anyone ready to enter ECD with a recognised foundation.",
     highlights: ["12 months", "NQF Level 4", "140 credits", "Saturday classes"],
   },
   teacher: {
     result: "Level 5 National Diploma",
-    match: "91% pathway match",
+    match: "Teacher-growth route",
     tone: "Teaching route",
     description:
-      "Best for aspiring Grade R teachers and educators who want to lead classrooms independently with stronger curriculum, assessment, and teaching confidence.",
-    highlights: ["18–24 months", "NQF Level 5", "240 credits", "Advanced pedagogy"],
+      "A stronger route for aspiring Grade R teachers and educators who want deeper curriculum, assessment, and classroom leadership confidence.",
+    highlights: ["18–24 months", "NQF Level 5", "240 credits", "Advanced teaching"],
   },
   owner: {
     result: "Level 5 National Diploma",
-    match: "96% pathway match",
+    match: "Daycare leadership route",
     tone: "Daycare ownership route",
     description:
-      "The diploma route is powerful for daycare ownership because it includes business management, financial planning, marketing, compliance, staff supervision, and centre operations.",
+      "A powerful route for students who want to manage, formalise, or open an ECD centre with stronger business, compliance, leadership, and operational confidence.",
     highlights: ["Business skills", "Compliance", "Leadership", "Centre management"],
   },
   unsure: {
@@ -67,7 +67,7 @@ const results = {
     match: "Personal guidance recommended",
     tone: "Guided route",
     description:
-      "Lesia's admissions team can help you choose between Level 4 and Level 5 based on your background, experience, documents, and career goals.",
+      "Not sure yet? Admissions can help you choose the right programme based on your background, goals, documents, and available schedule.",
     highlights: ["WhatsApp support", "Programme guidance", "Campus advice", "Application help"],
   },
 };
@@ -102,10 +102,10 @@ export default function PathwayQuiz() {
     <section className="section pathway" id="pathway">
       <div className="container pathway-grid">
         <div className="section-copy sticky-copy">
-          <p className="eyebrow">Advanced onboarding</p>
-          <h2>Find your best ECD pathway with a luxury admissions quiz.</h2>
+          <p className="eyebrow">Find your route</p>
+          <h2>A simple quiz to help you choose the right ECD path.</h2>
           <p>
-            This component makes the website feel like a digital admissions advisor — guiding students to the right qualification before they even send a WhatsApp message.
+            Not every student starts in the same place. This short guide helps you understand whether Level 4, Level 5, or a personal admissions conversation makes the most sense.
           </p>
           <div className="quiz-result">
             <span>{result.match}</span>
