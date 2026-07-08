@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Cormorant_Garamond, Manrope, Playfair_Display, Sora } from "next/font/google";
+import { Cormorant_Garamond, Fraunces, Manrope, Sora } from "next/font/google";
 import "./globals.css";
 import "./premium-typography.css";
 import "./media-upgrades.css";
+import "./smooth-refinements.css";
 
 const body = Manrope({ subsets: ["latin"], variable: "--font-body" });
 const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
-const display = Playfair_Display({
+const display = Fraunces({
   subsets: ["latin"],
   weight: ["600", "700", "800", "900"],
   variable: "--font-display",
