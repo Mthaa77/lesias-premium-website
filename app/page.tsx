@@ -1,6 +1,7 @@
 import AdmissionsFlow from "@/components/AdmissionsFlow";
 import EliteHero from "@/components/EliteHero";
 import EliteNavbar from "@/components/EliteNavbar";
+import MediaShowcase from "@/components/MediaShowcase";
 import PathwayQuiz from "@/components/PathwayQuiz";
 import ProgrammeExplorer from "@/components/ProgrammeExplorer";
 
@@ -22,10 +23,10 @@ const benefits = [
 ];
 
 const premiumMoments = [
+  ["Real Media Integration", "School photos and cinematic logo video now make the website feel authentic, local, and emotionally believable."],
   ["Admissions Concierge", "Every CTA routes visitors toward WhatsApp, phone, or email so enquiries can become warm conversations."],
   ["Programme Intelligence", "Level 4 and Level 5 are explained as a career ladder, not just two course cards."],
-  ["Trust Architecture", "Accreditation, campus, schedule, and outcomes are repeated throughout the journey to reduce doubt."],
-  ["Conversion Psychology", "The page moves from aspiration to trust, then choice, support, outcomes, and enrolment."],
+  ["Conversion Psychology", "The page moves from aspiration to trust, real visuals, choice, support, outcomes, and enrolment."],
 ];
 
 const outcomes = [
@@ -73,16 +74,17 @@ export default function Home() {
               This redesign positions Lesia's Educational Services as a trusted, aspirational, community-rooted institution that helps students turn compassion for children into professional progress.
             </p>
           </div>
-          <div className="editorial-card">
+          <div className="editorial-card media-editorial-card">
             <span>Brand promise</span>
             <h3>Your passion for children can become a recognised career.</h3>
             <p>
-              The website now feels like a premium admissions journey: cinematic, emotionally persuasive, practical, and built to convert visitors into student enquiries.
+              The website now uses real school media, a cinematic logo animation, and premium admissions storytelling to make the brand feel alive, human, and highly credible.
             </p>
           </div>
         </div>
       </section>
 
+      <MediaShowcase />
       <PathwayQuiz />
       <ProgrammeExplorer />
 
@@ -91,7 +93,7 @@ export default function Home() {
           <p className="eyebrow">Elite website experience</p>
           <h2>Advanced interactive components across the whole journey.</h2>
           <p>
-            Every section now has a premium role: attract attention, build trust, guide the student, explain the programmes, show outcomes, and convert the lead.
+            Every section now has a premium role: attract attention, show real visuals, build trust, guide the student, explain the programmes, show outcomes, and convert the lead.
           </p>
         </div>
         <div className="container premium-moments-grid">
@@ -154,7 +156,7 @@ export default function Home() {
             <h3>Soshanguve Block K</h3>
             <p>Khutso Primary School, next to Mashigo Funeral Parlour, Soshanguve, Pretoria, Gauteng.</p>
           </div>
-          <div className="campus-card">
+          <div className="campus-card campus-photo-card">
             <p className="eyebrow">Campus 02</p>
             <h3>Hammanskraal</h3>
             <p>Hammanskraal Campus, Gauteng Province — built to bring ECD training closer to the community.</p>
