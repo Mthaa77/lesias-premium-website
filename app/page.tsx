@@ -6,47 +6,47 @@ import PathwayQuiz from "@/components/PathwayQuiz";
 import ProgrammeExplorer from "@/components/ProgrammeExplorer";
 
 const trustBadges = [
-  ["ETDP-SETA", "Provider No. 1283", "Accredited ECD training"],
-  ["SAQA Aligned", "NQF recognised", "National portability"],
-  ["B-BBEE Level 1", "Transformation", "Community-centred growth"],
+  ["ETDP-SETA", "Provider No. 1283", "Training you can trust"],
+  ["SAQA Aligned", "NQF recognised", "Qualifications with direction"],
+  ["B-BBEE Level 1", "Transformation", "Built for community progress"],
   ["SACE Endorsed", "Education trust", "Professional credibility"],
-  ["Saturday Only", "Flexible", "Designed for real life"],
+  ["Saturday Only", "Flexible", "Made for real-life schedules"],
 ];
 
 const benefits = [
-  ["🗓️", "Flexible Saturday Learning", "Study while working, parenting, or managing weekday responsibilities."],
-  ["🏅", "Accredited Confidence", "Strong trust signals make the school feel safe, credible, and professionally aligned."],
-  ["🤝", "Mentored Support", "Students feel guided through applications, learning, assessment preparation, and career planning."],
-  ["📍", "Local Access", "Soshanguve and Hammanskraal positioning makes quality ECD training feel close to home."],
-  ["💼", "Career & Business Focus", "The website sells employability, daycare operations, compliance readiness, and centre leadership."],
-  ["🌍", "Community Impact", "Every graduate can uplift children, families, women-led businesses, and the local ECD ecosystem."],
+  ["🗓️", "Study Without Pausing Your Life", "Saturday classes help you grow your future while still managing work, family, travel, and daily responsibilities."],
+  ["🏅", "Recognised ECD Direction", "The programmes give students a clear route into early learning work, teaching support, centre leadership, or daycare ownership."],
+  ["🤝", "Guidance That Feels Personal", "Students are supported with programme choice, learning confidence, assessment preparation, and practical next steps."],
+  ["📍", "Quality Training Close to Home", "With access in Soshanguve and Hammanskraal, students can study in a familiar community environment."],
+  ["💼", "Career and Business Readiness", "The training speaks to employment, classroom confidence, daycare operations, compliance, and centre management."],
+  ["🌍", "A Qualification With Impact", "Every trained educator contributes to stronger children, stronger families, and better early learning outcomes."],
 ];
 
 const premiumMoments = [
-  ["Real Media Integration", "School photos and cinematic logo video now make the website feel authentic, local, and emotionally believable."],
-  ["Admissions Concierge", "Every CTA routes visitors toward WhatsApp, phone, or email so enquiries can become warm conversations."],
-  ["Programme Intelligence", "Level 4 and Level 5 are explained as a career ladder, not just two course cards."],
-  ["Conversion Psychology", "The page moves from aspiration to trust, real visuals, choice, support, outcomes, and enrolment."],
+  ["Real School Media", "Photos and video create a human first impression that feels local, honest, and emotionally credible."],
+  ["Clear Student Journey", "Visitors are guided from interest to programme choice, application, support, and enrolment without confusion."],
+  ["Programme Clarity", "Level 4 and Level 5 are explained as a simple growth path, not just course names on a brochure."],
+  ["Lead-Focused Design", "Every major section gently moves the visitor toward calling, WhatsApping, or starting an application."],
 ];
 
 const outcomes = [
   {
     title: "Employment Pathway",
-    text: "For students who want to work in registered schools, preschools, daycares, and ECD centres.",
+    text: "For students who want to work in preschools, daycares, ECD centres, Grade R environments, and early learning support roles.",
     chips: ["Assistant Teacher", "Grade R Teacher", "Daycare Practitioner", "ECD Administrator", "Centre Supervisor", "Curriculum Coordinator"],
   },
   {
     title: "Entrepreneurship Pathway",
-    text: "For students who want to formalise, launch, manage, and grow an ECD centre or home-based daycare.",
+    text: "For students who want to formalise a home-based crèche, launch a daycare, manage a centre, or grow an ECD business.",
     chips: ["Daycare Owner", "Home-Based Centre", "ECD Operator", "Training Facilitator", "ECD Consultant", "Community Leader"],
   },
 ];
 
 const faq = [
-  ["Which programme is best for beginners?", "The Level 4 FET Certificate is the best entry point for beginners, aspiring assistants, daycare staff, and people starting their formal ECD career."],
-  ["Which programme is best for daycare owners?", "The Level 5 National Diploma is stronger for owners and managers because it includes advanced teaching, curriculum design, business management, compliance, and centre operations."],
-  ["Can students study while working?", "Yes. The Saturday-only model is designed for working adults, parents, and people with weekday responsibilities."],
-  ["Where are the campuses?", "Campus 1 is in Soshanguve Block K at Khutso Primary School. Campus 2 is in Hammanskraal, Gauteng."],
+  ["Which programme is best if I am starting from zero?", "Start with the Level 4 FET Certificate. It is the strongest foundation for new entrants, aspiring assistants, daycare staff, and students beginning their formal ECD journey."],
+  ["Which programme is better if I want to own or manage a daycare?", "The Level 5 National Diploma is the stronger path for ownership and management because it develops advanced teaching, curriculum, leadership, business, and compliance confidence."],
+  ["Can I study while working or parenting?", "Yes. The Saturday-only structure is designed for adults who have weekday responsibilities but still want to improve their future."],
+  ["Where can I attend classes?", "Lesia's offers access through Soshanguve Block K at Khutso Primary School and a Hammanskraal campus in Gauteng."],
 ];
 
 export default function Home() {
@@ -68,17 +68,17 @@ export default function Home() {
       <section className="section editorial-section">
         <div className="container editorial-grid">
           <div className="section-copy">
-            <p className="eyebrow">Premium repositioning</p>
-            <h2>Not just a school — a polished ECD career gateway.</h2>
+            <p className="eyebrow">The Lesia's promise</p>
+            <h2>Training educators who shape a child's first foundation.</h2>
             <p>
-              This redesign positions Lesia's Educational Services as a trusted, aspirational, community-rooted institution that helps students turn compassion for children into professional progress.
+              Early childhood education is where confidence, language, creativity, discipline, and curiosity begin. Lesia's helps students become the kind of practitioners families can trust and children can remember.
             </p>
           </div>
           <div className="editorial-card media-editorial-card">
-            <span>Brand promise</span>
-            <h3>Your passion for children can become a recognised career.</h3>
+            <span>From passion to profession</span>
+            <h3>Your love for children can become a recognised career.</h3>
             <p>
-              The website now uses real school media, a cinematic logo animation, and premium admissions storytelling to make the brand feel alive, human, and highly credible.
+              Whether you are starting fresh, already working with children, or dreaming of opening a daycare, Lesia's gives you a structured path forward.
             </p>
           </div>
         </div>
@@ -90,10 +90,10 @@ export default function Home() {
 
       <section className="section experience-section" id="experience">
         <div className="container section-heading centered-heading">
-          <p className="eyebrow">Elite website experience</p>
-          <h2>Advanced interactive components across the whole journey.</h2>
+          <p className="eyebrow">A smoother admissions journey</p>
+          <h2>Every section is designed to guide, reassure, and convert.</h2>
           <p>
-            Every section now has a premium role: attract attention, show real visuals, build trust, guide the student, explain the programmes, show outcomes, and convert the lead.
+            The site now reads like a premium admissions conversation: warm enough for parents and community members, professional enough for an accredited training institution.
           </p>
         </div>
         <div className="container premium-moments-grid">
@@ -109,10 +109,10 @@ export default function Home() {
 
       <section className="section" id="support">
         <div className="container section-heading centered-heading">
-          <p className="eyebrow">Why choose Lesia's?</p>
-          <h2>Premium support with a strong community heart.</h2>
+          <p className="eyebrow">Why students choose Lesia's</p>
+          <h2>Flexible learning, recognised direction, and support that feels close.</h2>
           <p>
-            The school is presented as credible, warm, modern, and outcomes-focused — not just a training provider, but a student-success ecosystem.
+            Students need more than a qualification. They need clarity, encouragement, practical guidance, and a learning environment that understands real life.
           </p>
         </div>
         <div className="container benefit-grid">
@@ -130,9 +130,9 @@ export default function Home() {
         <div className="container outcomes-grid">
           <div className="section-copy outcome-copy">
             <p className="eyebrow">Career outcomes</p>
-            <h2>Where can a Lesia's qualification take you?</h2>
+            <h2>Build a future in teaching, childcare, or ECD business.</h2>
             <p>
-              The website sells the real outcome: not only a certificate, but employment, leadership, daycare formalisation, and community upliftment.
+              The goal is not only to study. The goal is to become useful, employable, confident, and prepared for real work with young children.
             </p>
           </div>
           {outcomes.map((outcome, index) => (
@@ -154,17 +154,17 @@ export default function Home() {
           <div className="campus-card primary-campus">
             <p className="eyebrow">Campus 01</p>
             <h3>Soshanguve Block K</h3>
-            <p>Khutso Primary School, next to Mashigo Funeral Parlour, Soshanguve, Pretoria, Gauteng.</p>
+            <p>Attend classes at Khutso Primary School, next to Mashigo Funeral Parlour, in Soshanguve, Pretoria, Gauteng.</p>
           </div>
           <div className="campus-card campus-photo-card">
             <p className="eyebrow">Campus 02</p>
             <h3>Hammanskraal</h3>
-            <p>Hammanskraal Campus, Gauteng Province — built to bring ECD training closer to the community.</p>
+            <p>A community-access campus for students who want recognised ECD training closer to home.</p>
           </div>
           <div className="campus-card schedule-card">
             <p className="eyebrow">Class schedule</p>
             <h3>Saturdays Only</h3>
-            <p>Perfect for students who work, parent, travel, or manage weekday responsibilities.</p>
+            <p>Keep your weekday responsibilities while building a qualification that can open new doors.</p>
           </div>
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function Home() {
         <div className="container faq-grid">
           <div className="section-copy">
             <p className="eyebrow">Quick answers</p>
-            <h2>Questions students ask before applying.</h2>
+            <h2>What students usually ask before applying.</h2>
           </div>
           <div className="faq-list">
             {faq.map(([question, answer]) => (
@@ -190,9 +190,9 @@ export default function Home() {
         <div className="container contact-card">
           <div>
             <p className="eyebrow">Speak to admissions</p>
-            <h2>Your ECD future can start this Saturday.</h2>
+            <h2>Your ECD future can start with one message.</h2>
             <p>
-              Whether you want to become a daycare practitioner, Grade R teacher, ECD centre manager, or daycare owner, Lesia's Educational Services gives you recognised training, mentorship, and support.
+              Ask about Level 4, Level 5, registration, campus options, class dates, and the best route for your goals. Lesia's will help you take the next step clearly.
             </p>
           </div>
           <div className="contact-actions">
