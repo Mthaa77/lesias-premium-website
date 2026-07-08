@@ -1,0 +1,465 @@
+/* Smooth, premium refinements: no 3D objects, cleaner media hero, richer typography, and softer motion */
+:root {
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.clean-hero {
+  padding-top: 160px;
+}
+
+.clean-hero-grid {
+  grid-template-columns: 0.98fr 1.02fr;
+}
+
+.clean-hero h1 {
+  max-width: 880px;
+  font-size: clamp(58px, 9.4vw, 118px);
+  letter-spacing: -0.082em;
+}
+
+.clean-hero .hero-lead {
+  max-width: 720px;
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.hero-media-composition {
+  position: relative;
+  min-height: 650px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 46px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.055)),
+    radial-gradient(circle at 70% 20%, rgba(255, 217, 141, 0.18), transparent 24rem);
+  box-shadow: 0 46px 120px rgba(0, 0, 0, 0.28);
+  animation: softLift 900ms var(--ease-premium) both;
+}
+
+.hero-media-composition::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(50, 168, 255, 0.16), transparent 20rem);
+  pointer-events: none;
+}
+
+.hero-video-card,
+.hero-photo-card,
+.hero-logo-plate,
+.hero-trust-row {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(18px);
+}
+
+.hero-video-card {
+  inset: 28px 28px auto 28px;
+  height: 285px;
+  border-radius: 32px;
+}
+
+.hero-video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.15) contrast(1.08);
+}
+
+.hero-video-card::after,
+.hero-photo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(2, 8, 20, 0.62));
+}
+
+.hero-video-label {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  color: white;
+  background: rgba(2, 8, 20, 0.5);
+  backdrop-filter: blur(16px);
+}
+
+.hero-video-label span,
+.hero-logo-plate span {
+  color: var(--champagne);
+  font-family: var(--font-luxury), serif;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.hero-video-label strong,
+.hero-logo-plate strong {
+  font-family: var(--font-sora), sans-serif;
+  font-size: 15px;
+}
+
+.hero-photo-card img {
+  object-fit: cover;
+}
+
+.hero-photo-main {
+  left: 28px;
+  bottom: 28px;
+  width: 58%;
+  height: 290px;
+  border-radius: 32px;
+}
+
+.hero-photo-small {
+  right: 28px;
+  bottom: 148px;
+  width: 34%;
+  height: 170px;
+  border-radius: 28px;
+}
+
+.hero-logo-plate {
+  right: 28px;
+  bottom: 28px;
+  width: 34%;
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 26px;
+  color: white;
+  background: rgba(2, 8, 20, 0.56);
+}
+
+.hero-logo-plate img {
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.hero-logo-plate span,
+.hero-logo-plate strong {
+  display: block;
+}
+
+.hero-trust-row {
+  top: 332px;
+  left: 28px;
+  right: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 999px;
+  color: white;
+  background: rgba(2, 8, 20, 0.48);
+}
+
+.hero-trust-row span {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.84);
+  font-family: var(--font-sora), sans-serif;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.hero-orb,
+.cinema-card,
+.main-crest,
+.crest-rings,
+.floating-proof,
+.mini-dashboard,
+.academy-badge,
+.stage-brand-video {
+  display: none !important;
+}
+
+.section h2,
+.section-copy h2,
+.section-heading h2,
+.contact-card h2 {
+  letter-spacing: -0.085em;
+  line-height: 0.9;
+}
+
+.section-copy p,
+.section-heading p,
+.benefit-card p,
+.premium-moment p,
+.campus-card p,
+.faq-list p,
+.contact-card p,
+.media-overlay p {
+  font-size: 17px;
+  line-height: 1.78;
+}
+
+.btn,
+.nav-pill a,
+.pathway-option,
+.programme-tabs button,
+.admissions-steps button,
+.contact-actions a,
+.faq-list details,
+.premium-moment,
+.benefit-card,
+.media-card,
+.gallery-tile,
+.campus-card {
+  transition:
+    transform 480ms var(--ease-premium),
+    box-shadow 480ms var(--ease-premium),
+    border-color 480ms var(--ease-premium),
+    background 480ms var(--ease-premium),
+    opacity 480ms var(--ease-premium);
+}
+
+.btn:hover,
+.pathway-option:hover,
+.programme-tabs button:hover,
+.admissions-steps button:hover,
+.contact-actions a:hover,
+.faq-list details:hover,
+.premium-moment:hover,
+.benefit-card:hover,
+.media-card:hover,
+.gallery-tile:hover,
+.campus-card:hover {
+  transform: translateY(-6px);
+}
+
+.trust-strip,
+.editorial-grid,
+.media-hero-grid,
+.media-feature-grid,
+.gallery-ribbon,
+.pathway-grid,
+.programme-console,
+.premium-moments-grid,
+.benefit-grid,
+.outcomes-grid,
+.admissions-grid,
+.campus-grid,
+.faq-grid,
+.contact-card {
+  animation: revealUp both;
+  animation-timeline: view();
+  animation-range: entry 8% cover 28%;
+}
+
+.hero-copy {
+  animation: revealUp 800ms var(--ease-premium) both;
+}
+
+.hero-metrics article:nth-child(1),
+.premium-moment:nth-child(1),
+.benefit-card:nth-child(1),
+.media-card:nth-child(1) { animation-delay: 80ms; }
+.hero-metrics article:nth-child(2),
+.premium-moment:nth-child(2),
+.benefit-card:nth-child(2),
+.media-card:nth-child(2) { animation-delay: 140ms; }
+.hero-metrics article:nth-child(3),
+.premium-moment:nth-child(3),
+.benefit-card:nth-child(3),
+.media-card:nth-child(3) { animation-delay: 200ms; }
+.hero-metrics article:nth-child(4),
+.premium-moment:nth-child(4),
+.benefit-card:nth-child(4),
+.media-card:nth-child(4) { animation-delay: 260ms; }
+
+.hero-metrics article,
+.premium-moment,
+.benefit-card,
+.media-card,
+.campus-card,
+.career-card {
+  animation: cardIn 760ms var(--ease-premium) both;
+}
+
+.programme-visual::before,
+.hero-stage::before {
+  display: none;
+}
+
+.soft-programme-visual {
+  background:
+    linear-gradient(180deg, rgba(2, 8, 20, 0.22), rgba(2, 8, 20, 0.74)),
+    url("/images/FB_IMG_1767876366152.jpg") center/cover;
+}
+
+.clean-certificate-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(18px);
+}
+
+.seal {
+  box-shadow: 0 18px 44px rgba(255, 157, 23, 0.22);
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(34px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes softLift {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 1100px) {
+  .clean-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media-composition {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 720px) {
+  .clean-hero {
+    padding-top: 136px;
+  }
+
+  .clean-hero h1 {
+    font-size: clamp(50px, 17vw, 76px);
+    letter-spacing: -0.07em;
+  }
+
+  .hero-media-composition {
+    min-height: 590px;
+    border-radius: 34px;
+  }
+
+  .hero-video-card {
+    inset: 16px 16px auto 16px;
+    height: 240px;
+    border-radius: 26px;
+  }
+
+  .hero-trust-row {
+    top: 270px;
+    left: 16px;
+    right: 16px;
+    flex-wrap: wrap;
+    border-radius: 24px;
+  }
+
+  .hero-photo-main {
+    left: 16px;
+    right: 16px;
+    bottom: 142px;
+    width: auto;
+    height: 170px;
+    border-radius: 26px;
+  }
+
+  .hero-photo-small {
+    display: none;
+  }
+
+  .hero-logo-plate {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    width: auto;
+  }
+
+  .hero-video-label {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .trust-strip,
+  .editorial-grid,
+  .media-hero-grid,
+  .media-feature-grid,
+  .gallery-ribbon,
+  .pathway-grid,
+  .programme-console,
+  .premium-moments-grid,
+  .benefit-grid,
+  .outcomes-grid,
+  .admissions-grid,
+  .campus-grid,
+  .faq-grid,
+  .contact-card {
+    animation-range: entry 4% cover 20%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trust-strip,
+  .editorial-grid,
+  .media-hero-grid,
+  .media-feature-grid,
+  .gallery-ribbon,
+  .pathway-grid,
+  .programme-console,
+  .premium-moments-grid,
+  .benefit-grid,
+  .outcomes-grid,
+  .admissions-grid,
+  .campus-grid,
+  .faq-grid,
+  .contact-card,
+  .hero-copy,
+  .hero-media-composition,
+  .hero-metrics article,
+  .premium-moment,
+  .benefit-card,
+  .media-card,
+  .campus-card,
+  .career-card {
+    animation: none !important;
+  }
+}
