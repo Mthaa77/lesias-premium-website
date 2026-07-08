@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Cormorant_Garamond, Inter, Sora } from "next/font/google";
+import { Manrope, Playfair_Display, Sora } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const body = Manrope({ subsets: ["latin"], variable: "--font-body" });
 const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
-const cormorant = Cormorant_Garamond({
+const display = Playfair_Display({
   subsets: ["latin"],
-  weight: ["600", "700"],
+  weight: ["600", "700", "800", "900"],
   variable: "--font-display",
 });
 
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${sora.variable} ${cormorant.variable}`}>
+      <body className={`${body.variable} ${sora.variable} ${display.variable}`}>
         {children}
       </body>
     </html>
