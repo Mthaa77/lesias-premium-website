@@ -3,27 +3,27 @@ import Image from "next/image";
 const mediaItems = [
   {
     src: "/images/IMG-20260113-WA0008.jpg",
-    title: "Real student presence",
-    label: "Admissions story",
-    description: "Human photos make the website feel trustworthy, local, and emotionally connected.",
+    title: "A place to start your teaching journey",
+    label: "Student story",
+    description: "Real moments help future students see the school as familiar, welcoming, and possible.",
   },
   {
     src: "/images/IMG-20260113-WA0009.jpg",
-    title: "Learning community",
-    label: "Classroom energy",
-    description: "Authentic moments support the promise of practical, mentored, community-based training.",
+    title: "Training rooted in community",
+    label: "Learning environment",
+    description: "Lesia's speaks to students who want practical education close to home and connected to real families.",
   },
   {
     src: "/images/FB_IMG_1767876078874.jpg",
-    title: "ECD transformation",
-    label: "Student journey",
-    description: "These visuals help visitors imagine themselves joining the programme and progressing.",
+    title: "Confidence grows step by step",
+    label: "ECD progress",
+    description: "Every class, portfolio task, and milestone helps students move closer to professional readiness.",
   },
   {
     src: "/images/FB_IMG_1767876345564.jpg",
-    title: "Proud milestones",
-    label: "Growth moment",
-    description: "A premium gallery gives the school more emotional credibility than generic stock imagery.",
+    title: "A future worth celebrating",
+    label: "Milestone moment",
+    description: "The brand should feel proud, human, and aspirational — because students are building something meaningful.",
   },
 ];
 
@@ -39,10 +39,10 @@ export default function MediaShowcase() {
     <section className="section media-showcase" id="media">
       <div className="container media-hero-grid">
         <div className="section-copy">
-          <p className="eyebrow">Real Lesia's media</p>
-          <h2>Authentic visuals now power the premium story.</h2>
+          <p className="eyebrow">Real school moments</p>
+          <h2>See the people, pride, and purpose behind Lesia's.</h2>
           <p>
-            The uploaded photos and animated logo video are now used to make the website feel more real, more emotional, and more credible — replacing generic design with actual Lesia's brand assets.
+            The school is not just a qualification provider. It is a place where students begin to see themselves as educators, leaders, daycare owners, and builders of stronger early learning communities.
           </p>
         </div>
         <div className="media-video-card">
@@ -50,8 +50,8 @@ export default function MediaShowcase() {
             <source src="/images/Animate_the_logo._Cinematic_202607080543.mp4" type="video/mp4" />
           </video>
           <div className="video-caption">
-            <span>Animated identity</span>
-            <strong>Cinematic Lesia's brand motion</strong>
+            <span>Lesia's identity</span>
+            <strong>Recognised training with a community heart</strong>
           </div>
         </div>
       </div>
