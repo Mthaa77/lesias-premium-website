@@ -1,0 +1,172 @@
+/* Premium typography and section heading effects */
+:root {
+  --heading-shadow-soft: 0 18px 44px rgba(8, 40, 75, 0.16);
+  --heading-shadow-gold: 0 12px 34px rgba(255, 157, 23, 0.28);
+  --heading-shadow-dark: 0 26px 60px rgba(0, 0, 0, 0.42);
+}
+
+body {
+  font-feature-settings: "liga" 1, "kern" 1, "calt" 1;
+  text-rendering: geometricPrecision;
+}
+
+h1,
+h2,
+.hero-copy h1,
+.section h2,
+.section-copy h2,
+.section-heading h2,
+.contact-card h2,
+.editorial-card h3,
+.admissions-preview h3 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 900;
+  letter-spacing: -0.078em;
+  text-wrap: balance;
+}
+
+h3,
+.nav-pill a,
+.btn,
+.brand,
+.programme-detail h3,
+.pathway-option strong,
+.premium-moment h3,
+.benefit-card h3,
+.career-card h3,
+.campus-card h3 {
+  font-family: var(--font-sora), sans-serif;
+  letter-spacing: -0.045em;
+}
+
+p,
+li,
+summary,
+.contact-actions strong {
+  letter-spacing: -0.018em;
+}
+
+.eyebrow,
+.hero-kicker,
+.card-step,
+.editorial-card span,
+.programme-tabs span,
+.pathway-option span,
+.quiz-progress strong,
+.trust-strip strong,
+.trust-strip span {
+  font-family: var(--font-luxury), var(--font-sora), serif;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.elite-hero h1 {
+  text-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.08),
+    0 20px 54px rgba(0, 0, 0, 0.48),
+    0 0 80px rgba(255, 217, 141, 0.18);
+}
+
+.elite-hero h1 span {
+  filter: drop-shadow(0 18px 34px rgba(255, 157, 23, 0.24));
+}
+
+.section h2,
+.section-copy h2,
+.section-heading h2 {
+  position: relative;
+  text-shadow: var(--heading-shadow-soft);
+}
+
+.section h2::after,
+.section-copy h2::after,
+.section-heading h2::after {
+  content: "";
+  display: block;
+  width: 94px;
+  height: 4px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), var(--champagne), rgba(255, 255, 255, 0));
+  box-shadow: var(--heading-shadow-gold);
+}
+
+.centered-heading h2::after {
+  margin-inline: auto;
+}
+
+.dark-section h2,
+.contact-card h2,
+.primary-campus h3,
+.admissions-preview h3 {
+  text-shadow: var(--heading-shadow-dark);
+}
+
+.dark-section h2::after,
+.contact-card h2::after {
+  background: linear-gradient(90deg, var(--champagne), white, rgba(255, 255, 255, 0));
+}
+
+.editorial-card h3 {
+  text-shadow: 0 16px 38px rgba(8, 40, 75, 0.13);
+}
+
+.programme-detail h3,
+.advanced-quiz h3,
+.quiz-result h3 {
+  text-shadow: 0 14px 32px rgba(8, 40, 75, 0.12);
+}
+
+.quiz-result h3,
+.career-card h3,
+.admissions-preview h3 {
+  text-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.brand {
+  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.brand small {
+  text-shadow: 0 8px 22px rgba(255, 157, 23, 0.22);
+}
+
+.section-heading p,
+.section-copy p,
+.hero-lead {
+  max-width: 76ch;
+}
+
+.hero-lead {
+  text-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+}
+
+.premium-moment h3,
+.benefit-card h3,
+.campus-card h3 {
+  text-shadow: 0 10px 28px rgba(8, 40, 75, 0.1);
+}
+
+.trust-strip strong {
+  letter-spacing: -0.015em;
+  text-shadow: 0 9px 22px rgba(8, 40, 75, 0.08);
+}
+
+@media (max-width: 720px) {
+  h1,
+  h2,
+  .hero-copy h1,
+  .section h2,
+  .section-copy h2,
+  .section-heading h2,
+  .contact-card h2 {
+    letter-spacing: -0.065em;
+  }
+
+  .section h2::after,
+  .section-copy h2::after,
+  .section-heading h2::after {
+    width: 74px;
+    margin-top: 14px;
+  }
+}
